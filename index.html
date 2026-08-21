@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta name="google-site-verification" content="AK7yWdxZ6YdW1jJPgEwJdAE98cw4ZdrEdvrRKzheK6c" />
+
+<head>
+<meta name="google-site-verification" content="AK7yWdxZ6YdW1jJPgEwJdAE98cw4ZdrEdvrRKzheK6c" />
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>YOUR_Writes | Professional Writing Services</title>
-<meta name="description" content="YOUR_Writes provides professional CV and resume writing, writing services, academic writing, articles and blog writing.">
 
-<meta name="keywords" content="YOUR_Writes, CV writing, resume writing, academic writing, article writing, blog writing, writing services">
+  <meta name="description"
+    content="YOUR_Writes provides professional CV and resume writing, writing services, academic writing, articles and blog writing.">
 
-<meta name="author" content="YOUR_Writes">
+  <meta name="keywords"
+    content="YOUR_Writes, CV writing, resume writing, academic writing, article writing, blog writing, writing services">
+
+  <meta name="author" content="YOUR_Writes">
+
+  <!-- KEEP YOUR GOOGLE VERIFICATION TAG HERE -->
+  <!-- Paste the Google verification meta tag you already received directly below this comment. -->
+
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -24,33 +34,33 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #0b1120;
-      color: white;
+      background: #07111f;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     header {
-      background: #111827;
-      padding: 18px 25px;
+      background: #0b1729;
+      border-bottom: 1px solid #1e3a5f;
+      padding: 18px 7%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid #263244;
     }
 
     .logo {
       font-size: 25px;
-      font-weight: bold;
+      font-weight: 800;
       color: #38bdf8;
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      margin-left: 18px;
+      margin-left: 20px;
       font-size: 14px;
     }
 
@@ -59,24 +69,25 @@
     }
 
     .hero {
-      min-height: 82vh;
+      min-height: 85vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
       background:
-        linear-gradient(rgba(11,17,32,0.85), rgba(11,17,32,0.95)),
-        linear-gradient(135deg, #0f172a, #172554);
+        radial-gradient(circle at top right, #12345a, transparent 40%),
+        linear-gradient(135deg, #07111f, #0b1f38);
     }
 
     .hero-content {
-      max-width: 750px;
+      max-width: 800px;
     }
 
     .hero h1 {
-      font-size: 52px;
-      margin-bottom: 15px;
+      font-size: 56px;
+      line-height: 1.15;
+      margin-bottom: 20px;
     }
 
     .hero h1 span {
@@ -97,29 +108,35 @@
       text-decoration: none;
       font-weight: bold;
       background: #38bdf8;
-      color: #07111f;
+      color: #06111d;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
     }
 
     .btn-outline {
       background: transparent;
-      color: #38bdf8;
       border: 1px solid #38bdf8;
+      color: #38bdf8;
     }
 
     section {
-      padding: 70px 20px;
-      max-width: 1100px;
+      padding: 80px 7%;
+      max-width: 1200px;
       margin: auto;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
 
     .section-title h2 {
+      font-size: 34px;
       color: #38bdf8;
-      font-size: 32px;
       margin-bottom: 10px;
     }
 
@@ -133,33 +150,56 @@
       gap: 22px;
     }
 
-    .service-card {
-      background: #111827;
-      border: 1px solid #263244;
+    .card {
+      background: #0d1b2e;
+      border: 1px solid #1e3a5f;
+      border-radius: 15px;
       padding: 30px 22px;
-      border-radius: 14px;
       text-align: center;
       transition: 0.3s;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
+    .card:hover {
+      transform: translateY(-7px);
       border-color: #38bdf8;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
-    .service-icon {
-      font-size: 42px;
+    .icon {
+      font-size: 45px;
       margin-bottom: 15px;
     }
 
-    .service-card h3 {
-      color: white;
+    .card h3 {
       margin-bottom: 10px;
+      color: #ffffff;
     }
 
-    .service-card p {
+    .card p {
       color: #aab7c8;
       font-size: 15px;
+    }
+
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .why-box {
+      padding: 25px;
+      background: #0b1729;
+      border-left: 3px solid #38bdf8;
+      border-radius: 8px;
+    }
+
+    .why-box h3 {
+      color: #7dd3fc;
+      margin-bottom: 8px;
+    }
+
+    .why-box p {
+      color: #cbd5e1;
     }
 
     .about {
@@ -173,10 +213,10 @@
     }
 
     .contact-box {
-      background: #111827;
-      border: 1px solid #263244;
-      padding: 35px 20px;
-      border-radius: 14px;
+      background: linear-gradient(135deg, #0d1b2e, #102a46);
+      border: 1px solid #1e4d75;
+      border-radius: 18px;
+      padding: 45px 25px;
       text-align: center;
     }
 
@@ -186,14 +226,15 @@
     }
 
     footer {
-      background: #070b14;
-      text-align: center;
-      padding: 25px 15px;
-      color: #64748b;
+      background: #050b13;
       border-top: 1px solid #1e293b;
+      padding: 30px 15px;
+      text-align: center;
+      color: #64748b;
     }
 
     @media (max-width: 700px) {
+
       header {
         flex-direction: column;
         gap: 12px;
@@ -204,20 +245,25 @@
       }
 
       .hero h1 {
-        font-size: 38px;
+        font-size: 39px;
       }
 
       .hero p {
         font-size: 17px;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
   <header>
-    <div class="logo">YOUR_Writes ✍️</div>
+
+    <div class="logo">
+      YOUR_Writes ✍️
+    </div>
 
     <nav>
       <a href="#home">Home</a>
@@ -225,88 +271,188 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </header>
 
 
   <section class="hero" id="home">
+
     <div class="hero-content">
 
-      <h1>Bring Your <span>Words</span> to Life.</h1>
+      <h1>
+        Your Words.<br>
+        <span>Your Voice.</span>
+      </h1>
 
       <p>
-        Professional writing services designed to help you
-        present your ideas, experience and stories with confidence.
+        Professional writing services that turn your ideas,
+        experience and stories into powerful words.
       </p>
 
-      <a href="#services" class="btn">Our Services</a>
-      <a href="#contact" class="btn btn-outline">Contact Us</a>
+      <a href="#services" class="btn">
+        Explore Services
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Contact Us
+      </a>
 
     </div>
+
   </section>
 
 
   <section id="services">
 
     <div class="section-title">
+
       <h2>Our Services</h2>
-      <p>Professional writing for your personal, academic and business needs.</p>
+
+      <p>
+        Professional writing tailored to your needs.
+      </p>
+
     </div>
+
 
     <div class="services">
 
-      <div class="service-card">
-        <div class="service-icon">📄</div>
+      <div class="card">
+
+        <div class="icon">📄</div>
+
         <h3>CV / Resume Writing</h3>
+
         <p>
-          Professional CV and resume writing designed to
-          present your skills and experience clearly.
+          Professional CVs and resumes designed to
+          highlight your skills, experience and strengths.
         </p>
+
       </div>
 
 
-      <div class="service-card">
-        <div class="service-icon">✍️</div>
+      <div class="card">
+
+        <div class="icon">✍️</div>
+
         <h3>Writing Services</h3>
+
         <p>
-          Get well-written and polished content tailored
-          to your specific needs.
+          Clear, engaging and professionally written
+          content created around your requirements.
         </p>
+
       </div>
 
 
-      <div class="service-card">
-        <div class="service-icon">🎓</div>
+      <div class="card">
+
+        <div class="icon">🎓</div>
+
         <h3>School / Academic Writing</h3>
+
         <p>
           Assistance with essays, projects, assignments
           and other academic writing needs.
         </p>
+
       </div>
 
 
-      <div class="service-card">
-        <div class="service-icon">📰</div>
+      <div class="card">
+
+        <div class="icon">📰</div>
+
         <h3>Articles / Blogs</h3>
+
         <p>
-          Engaging articles and blog content created
-          for websites, brands and personal platforms.
+          Engaging articles and blog content for websites,
+          businesses, brands and personal platforms.
         </p>
+
       </div>
 
     </div>
+
+  </section>
+
+
+  <section>
+
+    <div class="section-title">
+
+      <h2>Why Choose YOUR_Writes?</h2>
+
+      <p>
+        We focus on making your words clear, professional and impactful.
+      </p>
+
+    </div>
+
+
+    <div class="why">
+
+      <div class="why-box">
+
+        <h3>✨ Professional</h3>
+
+        <p>
+          Quality writing created with attention to detail.
+        </p>
+
+      </div>
+
+
+      <div class="why-box">
+
+        <h3>⚡ Reliable</h3>
+
+        <p>
+          We value your time and aim to deliver quality work efficiently.
+        </p>
+
+      </div>
+
+
+      <div class="why-box">
+
+        <h3>🎯 Tailored</h3>
+
+        <p>
+          Every project is written around your specific needs.
+        </p>
+
+      </div>
+
+
+      <div class="why-box">
+
+        <h3>💡 Creative</h3>
+
+        <p>
+          We turn ideas into clear and engaging content.
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <section id="about">
 
     <div class="section-title">
+
       <h2>About YOUR_Writes</h2>
+
     </div>
+
 
     <div class="about">
 
       <p>
-        YOUR_Writes helps individuals, students, professionals
+        YOUR_Writes helps students, professionals, individuals
         and businesses communicate their ideas through clear,
         professional and engaging writing.
       </p>
@@ -319,32 +465,57 @@
   <section id="contact">
 
     <div class="section-title">
+
       <h2>Let's Work Together</h2>
-      <p>Have a writing project? Get in touch with us.</p>
+
+      <p>
+        Ready to get started? Contact YOUR_Writes today.
+      </p>
+
     </div>
+
 
     <div class="contact-box">
 
       <p>
-        Contact YOUR_Writes to discuss your project and
-        find the right writing service for you.
+        📧 your.writes999@gmail.com
       </p>
 
-    <a href="mailto:your.writes999@gmail.com" class="btn">
-  📧 Email Us
-</a>
+      <p>
+        💬 WhatsApp: +234 913 480 3417
+      </p>
 
-<a href="https://wa.me/2349134803417" class="btn btn-outline">
-  💬 WhatsApp Us
-</a>
+
+      <a
+        href="mailto:your.writes999@gmail.com"
+        class="btn">
+        📧 Email Us
+      </a>
+
+
+      <a
+        href="https://wa.me/2349134803417"
+        class="btn btn-outline">
+        💬 WhatsApp Us
+      </a>
+
     </div>
 
   </section>
 
 
   <footer>
-    <p>©️ 2026 YOUR_Writes. All rights reserved.</p>
+
+    <p>
+      ©️ 2026 YOUR_Writes. All rights reserved.
+    </p>
+
+    <p>
+      Professional Writing Services
+    </p>
+
   </footer>
 
 </body>
+
 </html>
